@@ -1,1 +1,16 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Competishn</title>
+</head>
+<body>
+    <h1>Какой вариант лучше?</h1>
+    <button onclick="location.href='/vote/{{ quote1.id }}/{{ quote2.id }}'">
+        {{ quote1.text }}
+    </button>
+    <button onclick="location.href='/vote/{{ quote2.id }}/{{ quote1.id }}'">
+        {{ quote2.text }}
+    </button>
+</body>
+</html>
